@@ -1,6 +1,6 @@
 # Write your code here.
 def badge_maker(name)
-  return "Hello, my name is #{name}."
+  "Hello, my name is #{name}."
 end
 
 def batch_badge_creator(attendees)
@@ -11,4 +11,12 @@ def batch_badge_creator(attendees)
   end
   return array
 end
-  
+
+def assign_rooms(attendees)
+  array = []
+  attendees.each_with_index do |x, i|
+    y = "Hello #{x}! You'll be assigned to room #{i + 1}!"
+    array << y 
+  end
+  return array
+end
